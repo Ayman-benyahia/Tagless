@@ -104,7 +104,7 @@ function interpret(tree) {
         return;
     }
 
-    if (tree.name === 'quote' && tree.value === `'` && tree.parent.name === 'inner') {
+    if (tree.name === 'special' && tree.value === `'` && tree.parent.name === 'inner') {
         tree.name = 'space';
         tree.value = ``;
         return;
@@ -247,9 +247,9 @@ let parse = (code) => {
     function inner() {
         let node = new Node('inner', '');
         if (code[index + 1] === `'`) {
-            node.addChild(new Node('quote', `'`)); match(`'`);
+            node.addChild(new Node('special', `'`)); match(`'`);
             node.addChild(text());
-            node.addChild(new Node('quote', `'`)); match(`'`);
+            node.addChild(new Node('special', `'`)); match(`'`);
             node.addChild(space());
             node.addChild(inner());
         }
