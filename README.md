@@ -68,11 +68,11 @@ div (
 ```
 
 ### How to use
-Tagless is only one file, just includes it on your HTML:
+Tagless is only one file just include it on your HTML:
 ```
  <script src="./tagless.js"></script>
 ```
-Now let's write some code!
+Now let's write some code:
 ```
 let markup = `
 div ( 
@@ -130,7 +130,7 @@ document.body.innerHTML += html;
                     ' '          | 
                     \n
 ```
-  
+ 
 
 
   
