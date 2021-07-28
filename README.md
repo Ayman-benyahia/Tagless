@@ -1,5 +1,5 @@
 # Tagless
-Tagless is javascript library that interpret costume HTML syntax (HTML syntax without tags)<br> into normal HTML and it's <br>
+Tagless is javascript library that interpret costume HTML syntax (HTML syntax without tags)<br> into normal HTML and it's 
 only 12 bytes unminified and 5 bytes minified so you dont have to worry about bundle size
 
 ### Tagless Syntax 
