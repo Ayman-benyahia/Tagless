@@ -107,7 +107,7 @@ document.body.innerHTML += html;
 > \- element name includes something other than `-`, `_`, alphabets, digits.<br>
 > \- missing token(special syntax character) like for example `(`, `)`, `:`, `'`, `/`<br>
 > \- forgetting to escape `'` inside string for example `'lorem ' ipsum'`<br>
-> you should escape using `@`, for example `'lorem @' ipsum'`;
+> you should escape using `@`, for example `'lorem @' ipsum'`
 
 
 ### Tagless BFN grammar 
