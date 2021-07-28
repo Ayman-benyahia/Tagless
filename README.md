@@ -2,7 +2,7 @@
 Tagless is javascript library that interpret costume <br>
 HTML syntax (HTML syntax without tags) into normal HTML.
 
-# Tagless Syntax 
+### Tagless Syntax 
 ```
 div (class:'card') 
   div (class:'card-head') 
@@ -33,7 +33,7 @@ Compiled into:
 </div>
 ```
 
-# Tagless syntax features
+### Tagless syntax features
 The syntax is organizable, see valide possibilities below:
 
 ```
@@ -69,7 +69,7 @@ div ( class : 'classname' id : 'identifier' )
 /div
 ```
 
-# How to use
+### How to use
 ```
 let code = `
 div ( 
@@ -87,16 +87,16 @@ document.body.innerHTML += html;
 *Note: 
 Tagless syntax error missing token is sometimes inaccurate!<br>*
 
-*Note: 
-Error is thrown because of:
-- attribute name includes something other than '-', '_', alphabets, digits.
-- element name includes something other than '-', '_', alphabets, digits.
-- missing token(special syntax character) like for example `(`, `)`, `:`, `'`, '/'
-- forgetting to escape `'` inside string for example 'lorem ' ipsum'
-you should escape 'lorem @' ipsum'.*
+*Note:*
+*Error is thrown because of:*
+*- attribute name includes something other than '-', '_', alphabets, digits.*
+*- element name includes something other than '-', '_', alphabets, digits.*
+*- missing token(special syntax character) like for example `(`, `)`, `:`, `'`, '/'ù
+*- forgetting to escape `'` inside string for example 'lorem ' ipsum'*
+*you should escape 'lorem @' ipsum'.*
 
 
-# Tagless BFN grammar 
+### Tagless BFN grammar 
 ```
 <element>        := <space> <open-tag>  <space> '(' <space> <attr> <space> ')' <space> <inner> <space> <close-tag> <space> <inner> | 
                     <space> '!--' <space> <text> <space> '--' <space> <inner>                                                                     | 
