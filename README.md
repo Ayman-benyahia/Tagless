@@ -34,7 +34,10 @@ Compiled into:
 ```
 
 ### Tagless syntax features
-The syntax is organizable, see valide possibilities below:
+1. Tagless have syntax validator
+2. Faster to write & easy to read 
+3. Easy to use only call compile function see **How to use** section. 
+4. The syntax is organizable, see valide possibilities below:
 
 ```
 div (class:'classname') 'lorem ipsum dolor' /div
