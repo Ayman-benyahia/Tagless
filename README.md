@@ -22,7 +22,7 @@ Compiled into:
 ```
 <div  class="card"> 
   <div  class="card-head"> 
-    <img  class="card-img" src="./landscape.jpg"> </img>
+    <img  class="card-img" src="./landscape.jpg">
     <h4  class="card-header"> "Lorem ipsum dolor" </h4>
   </div>
   <div  class="card-body"> 
