@@ -72,6 +72,17 @@ div ( class : 'classname' id : 'identifier' )
 /div
 ```
 
+```
+div ( 
+  class : 'classname' 
+  id    : 'identifier'
+) 
+  'lorem ipsum dolor' 
+  a (href:'#') 'lorem ipsum dolor' /a
+  'lorem ipsum'
+/div
+```
+
 ### How to use
 ```
 let code = `
