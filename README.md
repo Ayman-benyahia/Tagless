@@ -17,27 +17,11 @@ div (class:'card')
 /div
 ```
 
-Compiled into:
-
-```
-<div  class="card"> 
-  <div  class="card-head"> 
-    <img  class="card-img" src="./landscape.jpg">
-    <h4  class="card-header"> "Lorem ipsum dolor" </h4>
-  </div>
-  <div  class="card-body"> 
-    <p  class="card-message"> 
-      "Lorem ipsum dolor sit emet"
-    </p>
-  </div>
-</div>
-```
-
 ### Tagless syntax features
 1. Tagless have syntax validator
 2. Faster to write & easy to read 
-3. Easy to use only call compile function see **How to use** section. 
-4. The syntax is organizable, see valide possibilities below:
+3. Easy to use only call one function see **How to use** section. 
+4. The syntax is organizable, see code below:
 
 ```
 div (class:'classname') 'lorem ipsum dolor' /div
@@ -84,8 +68,13 @@ div (
 ```
 
 ### How to use
+Tagless is only one file, just includes it on your HTML:
 ```
-let code = `
+ <script src="./tagless.js"></script>
+```
+Now let's write some code!
+```
+let markup = `
 div ( 
   class:'classname' 
   id:'identifier' 
@@ -94,7 +83,7 @@ div (
   a (href:'#') 'Lorem ipsum' /a 
 /div`
 
-let html = compile(code);
+let html = compile(markup);
 document.body.innerHTML += html;
 ```
 
