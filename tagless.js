@@ -125,7 +125,7 @@ function interpret(tree) {
     }
 }
 
-let parse = (code) => {
+let compile = (code) => {
 
     let index = -1;
     let lookAhead = '';
@@ -166,7 +166,6 @@ let parse = (code) => {
             node.addChild(attribute());
             node.addChild(space());
             node.addChild(new Node('special', ')')); match(')');
-            node.addChild(new Node('space', ' ')); match(' ');
             node.addChild(space());
             node.addChild(inner());
             node.addChild(space());
@@ -402,4 +401,3 @@ let parse = (code) => {
     let tree = element();
     return interpret(tree);
 }
-
