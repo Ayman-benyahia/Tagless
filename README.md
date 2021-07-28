@@ -84,16 +84,16 @@ let html = compile(code);
 document.body.innerHTML += html;
 ```
 
-*Note: 
-Tagless syntax error missing token is sometimes inaccurate!<br>*
+> **Note:**
+> Tagless syntax error missing token is sometimes inaccurate!<br>*
 
-*Note:*
-*Error is thrown because of:*
-*- attribute name includes something other than '-', '_', alphabets, digits.*
-*- element name includes something other than '-', '_', alphabets, digits.*
-*- missing token(special syntax character) like for example `(`, `)`, `:`, `'`, '/'ù
-*- forgetting to escape `'` inside string for example 'lorem ' ipsum'*
-*you should escape 'lorem @' ipsum'.*
+> **Note:**
+> Error is thrown because of:
+> - attribute name includes something other than '-', '_', alphabets, digits.
+> - element name includes something other than '-', '_', alphabets, digits.
+> - missing token(special syntax character) like for example `(`, `)`, `:`, `'`, '/'
+> - forgetting to escape `'` inside string for example 'lorem ' ipsum'
+> you should escape 'lorem @' ipsum'.
 
 
 ### Tagless BFN grammar 
