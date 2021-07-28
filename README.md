@@ -3,17 +3,19 @@ Tagless is javascript library that interpret costume <br>
 HTML syntax (HTML syntax without tags) into normal HTML.
 
 # Tagless Syntax 
-> div (class:'card') 
->   div (class:'card-head') 
->     img (class:'card-img' src:'./landscape.jpg') /img
->     h4 (class:'card-header') 'Lorem ipsum dolor' /h4
->   /div
->   div (class:'card-body') 
->     p (class:'card-message') 
->       'Lorem ipsum dolor sit emet'
->     /p
->   /div
-> /div
+```
+div (class:'card') 
+  div (class:'card-head') 
+    img (class:'card-img' src:'./landscape.jpg') /img
+    h4 (class:'card-header') 'Lorem ipsum dolor' /h4
+  /div
+  div (class:'card-body') 
+    p (class:'card-message') 
+      'Lorem ipsum dolor sit emet'
+    /p
+  /div
+/div
+```
 
 Compiled into:
 
