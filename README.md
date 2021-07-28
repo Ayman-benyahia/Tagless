@@ -103,11 +103,11 @@ document.body.innerHTML += html;
 
 > **Note:**
 > Error is thrown because of:<br>
-> \- attribute name includes something other than '-', '_', alphabets, digits.<br>
-> \- element name includes something other than '-', '_', alphabets, digits.<br>
-> \- missing token(special syntax character) like for example `(`, `)`, `:`, `'`, '/'<br>
-> \- forgetting to escape `'` inside string for example 'lorem ' ipsum'<br>
-> you should escape 'lorem @' ipsum'.
+> \- attribute name includes something other than `-`, `_`, alphabets, digits.<br>
+> \- element name includes something other than `-`, `_`, alphabets, digits.<br>
+> \- missing token(special syntax character) like for example `(`, `)`, `:`, `'`, `/`<br>
+> \- forgetting to escape `'` inside string for example `'lorem ' ipsum'`<br>
+> you should escape using `@`, for example `'lorem @' ipsum'`;
 
 
 ### Tagless BFN grammar 
