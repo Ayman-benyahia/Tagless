@@ -85,14 +85,14 @@ document.body.innerHTML += html;
 ```
 
 > **Note:**
-> Tagless syntax error missing token is sometimes inaccurate!<br>*
+> Tagless syntax error missing token is sometimes inaccurate!
 
 > **Note:**
 > Error is thrown because of:
-> - attribute name includes something other than '-', '_', alphabets, digits.
-> - element name includes something other than '-', '_', alphabets, digits.
-> - missing token(special syntax character) like for example `(`, `)`, `:`, `'`, '/'
-> - forgetting to escape `'` inside string for example 'lorem ' ipsum'
+> \- attribute name includes something other than '-', '_', alphabets, digits.
+> \- element name includes something other than '-', '_', alphabets, digits.
+> \- missing token(special syntax character) like for example `(`, `)`, `:`, `'`, '/'
+> \- forgetting to escape `'` inside string for example 'lorem ' ipsum'
 > you should escape 'lorem @' ipsum'.
 
 
