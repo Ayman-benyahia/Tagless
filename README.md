@@ -3,76 +3,69 @@ Tagless is javascript library that interpret costume HTML syntax (HTML syntax wi
 only 12KB unminified and 5KB minified so you dont have to worry about bundle size.
 
 ### Tagless Syntax 
+Tagless syntax is very clean minimal and easy <br> to navigate visually adn fast to write.
 ```
-div (class:'card') 
-  div (class:'card-head') 
-    img (class:'card-img' src:'./landscape.jpg') /img
-    h4 (class:'card-header') 'Lorem ipsum dolor' /h4
+nav (
+    class:'
+      navbar 
+      navbar-expand-lg 
+      navbar-light bg-light'
+  )
+  div ( class:'container-fluid' )
+    a ( class:'navbar-brand' href:'#' ) 
+      'Navbar Brand' 
+    /a
+    button (
+          class          : 'navbar-toggler' type                   : 'button' 
+          data-bs-toggle : 'collapse' data-bs-target               : '#navbarSupportedContent' 
+          aria-controls  : 'navbarSupportedContent' aria-expanded  : 'false'
+          aria-label     : 'Toggle navigation'
+      )   span ( class:'navbar-toggler-icon' ) /span
+    /button
+    div ( 
+        class:'collapse navbar-collapse' 
+        id   :'navbarSupportedContent' 
+      ) 
+      ul ( 
+          class:'navbar-nav me-auto 
+                mb-2 mb-lg-0' 
+        ) 
+        li ( class:'nav-item' )
+          a ( class:'nav-link active' 
+            aria-current:'page' href:'#' ) 'Home' /a
+        /li
+        li ( class:'nav-item' )
+          a ( class:'nav-link' href:'#' ) 
+            'Features' 
+          /a
+        /li
+        li ( class:'nav-item' )
+          a ( class:'nav-link' href:'#' ) 
+            'About' 
+          /a
+        /li
+        li ( class:'nav-item' )
+          a ( class:'nav-link' href:'#' ) 
+            'Contact' 
+          /a
+        /li
+      /ul
+    /div
   /div
-  div (class:'card-body') 
-    p (class:'card-message') 
-      'Lorem ipsum dolor sit emet'
-    /p
-  /div
-/div
+/nav
 ```
 
 ### Tagless syntax features
 - Tagless have syntax validator
 - Faster to write & easy to read 
-- Easy to use only call one function see **How to use** section. 
-- The syntax is organizable, see code below:
-
-```
-div (class:'classname') 'lorem ipsum dolor' /div
-div ( class : 'classname' ) 'lorem ipsum dolor' /div
-div (  class  :  'classname'  ) 'lorem ipsum dolor' /div
-div () 'lorem ipsum dolor' /div
-div ( ) 'lorem ipsum dolor' /div
-```
-
-```
-div ( 
-  class : 'classname' 
-  id    : 'identifier'
-) 
-  'lorem ipsum dolor' 
-/div
-```
-
-```
-div 
-( 
-  class : 'classname' 
-  id    : 'identifier'
-) 
-  'lorem ipsum dolor' 
-/div
-```
-
-```
-div ( class : 'classname' id : 'identifier' ) 
-  'lorem ipsum dolor' 
-/div
-```
-
-```
-div ( 
-  class : 'classname' 
-  id    : 'identifier'
-) 
-  'lorem ipsum dolor' 
-  a (href:'#') 'lorem ipsum dolor' /a
-  'lorem ipsum'
-/div
-```
+- Easy to use, **How to use** section. 
 
 ### How to use
-Tagless is only one file just include it on your HTML:
+Downlaod tagless.js and include it normally.
 ```
  <script src="./tagless.js"></script>
 ```
-Now let's write some code:
+Tgaless is easy to use just call complie function, see code below.
 ```
 let markup = `
 div ( 
@@ -90,12 +83,12 @@ document.body.innerHTML += html;
 > **Note:**
 > Tagless syntax error missing token is sometimes inaccurate!
 
-> **Note:**
+> **Note:**<br>
 > Syntax error is thrown because of:<br>
-> \- attribute name includes something other than `-`, `_`, alphabets, digits.<br>
-> \- element name includes something other than `-`, `_`, alphabets, digits.<br>
-> \- missing token(special syntax character) like for example `(`, `)`, `:`, `'`, `/`<br>
-> \- forgetting to escape `'` inside string for example `'lorem ' ipsum'`<br>
+> - attribute name includes something other than `-`, `_`, alphabets, digits.<br>
+> - element name includes something other than `-`, `_`, alphabets, digits.<br>
+> - missing token(special syntax character) like for example `(`, `)`, `:`, `'`, `/`<br>
+> - forgetting to escape `'` inside string for example `'lorem ' ipsum'`<br>
 > you should escape using `@`, for example `'lorem @' ipsum'`
 
 
