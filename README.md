@@ -1,6 +1,6 @@
 # Tagless
 Tagless is javascript library that interpret costume HTML syntax (HTML syntax without tags)<br> into normal HTML and it's 
-only 12 bytes unminified and 5 bytes minified so you dont have to worry about bundle size
+only 12KB unminified and 5KB minified so you dont have to worry about bundle size.
 
 ### Tagless Syntax 
 ```
@@ -18,10 +18,10 @@ div (class:'card')
 ```
 
 ### Tagless syntax features
-1. Tagless have syntax validator
-2. Faster to write & easy to read 
-3. Easy to use only call one function see **How to use** section. 
-4. The syntax is organizable, see code below:
+- Tagless have syntax validator
+- Faster to write & easy to read 
+- Easy to use only call one function see **How to use** section. 
+- The syntax is organizable, see code below:
 
 ```
 div (class:'classname') 'lorem ipsum dolor' /div
