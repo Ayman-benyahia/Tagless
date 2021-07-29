@@ -3,7 +3,7 @@ Tagless is javascript library that interpret costume HTML syntax (HTML syntax wi
 only 12KB unminified and 5KB minified so you dont have to worry about bundle size.
 
 ### Tagless Syntax 
-Tagless syntax is very clean minimal and easy <br> to navigate visually and fast to write.
+Tagless syntax is very clean minimal and easy <br> to navigate visually and faster to write.
 ```
 nav (
     class:'
@@ -58,22 +58,19 @@ nav (
 ### Tagless syntax features
 - Tagless have syntax validator
 - Faster to write & easy to read 
-- Easy to use, **How to use** section. 
+- Easy to use. 
 
 ### How to use
-Downlaod tagless.js and include it normally.
+Download tagless.js and include it normally.
 ```
  <script src="./tagless.js"></script>
 ```
-Tgaless is easy to use just call complie function, see code below.
+Tagless is easy to use just call compile function, see code below.
 ```
 let markup = `
-div ( 
-  class:'classname' 
-  id:'identifier' 
-) 
-  'Lorem ipsum dolor sit emet.' 
-  a (href:'#') 'Lorem ipsum' /a 
+div ( class:'classname' id:'identifier' ) 
+    'Lorem ipsum dolor sit emet.' 
+    a (href:'#') 'Lorem ipsum' /a 
 /div`
 
 let html = compile(markup);
